@@ -1,0 +1,11 @@
+ my_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: burner-hemsharm15
+      dataset: dbt_poc
+      threads: 5
+      timeout_seconds: 300
+      location: us-central1
